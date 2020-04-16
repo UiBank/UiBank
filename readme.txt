@@ -1,2 +1,2 @@
 This file includes all instructions required to setup UiBank demo environment
-Hello first Jenkins build! 6
+Hello first Jenkins build! 7
