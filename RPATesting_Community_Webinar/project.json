@@ -7,6 +7,7 @@
     "UiPath.Excel.Activities": "[2.8.5]",
     "UiPath.Mail.Activities": "[1.8.5]",
     "UiPath.System.Activities": "[20.4.0]",
+    "UiPath.Testing.Activities": "[1.0.0]",
     "UiPath.UIAutomation.Activities": "[20.4.1]",
     "UiPathTeam.UiPathTesting.Activities": "[0.1.0.26717]"
   },
@@ -32,7 +33,18 @@
       "includeOriginalXaml": false,
       "privateWorkflows": []
     },
-    "fileInfoCollection": []
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "aa9ddfda-343b-4579-b0ff-30c1959bf68c",
+        "fileName": "Test Cases\\Open_Accounts.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7d17a4f4-0029-49fc-952b-b1372df6b67d",
+        "fileName": "Test Cases\\Check Filter for negative accounts.xaml"
+      }
+    ]
   },
   "expressionLanguage": "VisualBasic"
 }

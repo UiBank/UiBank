@@ -1,0 +1,11 @@
+﻿Account #,Bank Code,Type,Opened,Name,Balance,E-mail
+12345,102030,Checking,01 Jan 0001,Engelberts main account 1,-1875.05,Engelbert@example.com
+123424,00-22-88,Savings,01 Jan 0001,Rick Rainy Day Fund,1000,rick.crosby@uipath.com
+9182736,1928374,Checking,01 Jan 0001,Dans cool account,2000,daniel.delmoro@uipath.com
+1000,12300,Checking,01 Jan 0001,Ionut Checking,3000,ionut.nicula@uipath.com
+71005764,(null),Checking,01 Jan 0001,Presales Checking Account,4000,presalesadmin@uipath.com
+15574457,(null),Checking,01 Jan 0001,Demo Account,5000,rick.crosby@uipath.com
+13151719,123456,Checking,01 Jan 0001,Andrews Current Account,6000,danieldelmoro1@gmail.com
+71220171,(null),Checking,01 Jan 0001,My Account,7000,christine.moore@uipath.com
+75634531,(null),Savings,01 Jan 0001,MyCar,8000,robert.thullner@uipath.com
+46027202,(null),Checking,01 Jan 0001,CreditCard,9000,robert.thullner@uipath.com
