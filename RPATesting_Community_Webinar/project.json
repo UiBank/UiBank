@@ -43,6 +43,41 @@
         "editingStatus": "InProgress",
         "testCaseId": "7d17a4f4-0029-49fc-952b-b1372df6b67d",
         "fileName": "Test Cases\\Check Filter for negative accounts.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e9ea33c0-85f3-40c2-a5e4-042c152331e9",
+        "fileName": "Test Cases\\E2E Test.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e668a20a-9521-42fb-a7bc-3a2a16b144f8",
+        "fileName": "Test Cases\\TestCase 1.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "97982609-2f5f-425a-af0c-d6c3c447e7d5",
+        "fileName": "Test Cases\\TestCase 2.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1a1b2220-265f-4038-985e-ed01ee46bbf3",
+        "fileName": "Test Cases\\TestCase 3.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9217e421-df6f-4f05-a401-d9257d8492fe",
+        "fileName": "Test Cases\\TestCase 4.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3b58291b-f9fc-4434-81c4-f98056e8e179",
+        "fileName": "Test Cases\\TestCase 5.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "86c23012-82c6-4a64-a1dc-99f8bcbced62",
+        "fileName": "Test Cases\\TestCase 6.xaml"
       }
     ]
   },
