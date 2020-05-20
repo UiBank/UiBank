@@ -78,6 +78,11 @@
         "editingStatus": "Publishable",
         "testCaseId": "86c23012-82c6-4a64-a1dc-99f8bcbced62",
         "fileName": "Test Cases\\TestCase 6.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8cfab12e-5af5-4417-8d47-dda8e73e420b",
+        "fileName": "TestCase.xaml"
       }
     ]
   },
