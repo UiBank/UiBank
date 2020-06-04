@@ -9,17 +9,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-    dir $(Build.SourcesDirectory)
-  displayName: 'Run a multi-line script'
-
-
-# UiBank/RPATesting_Community_Webinar/project.json
 
 
 - task: UiPathPack@2
