@@ -27,5 +27,4 @@ steps:
     orchestratorConnection: 'Orchestrator'
     testProjectPath: '$(Build.ArtifactStagingDirectory)\Output'
     environment: 'ThomasStockerEnvironment'
-    folderName: 'ThomasStocker'
     testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
