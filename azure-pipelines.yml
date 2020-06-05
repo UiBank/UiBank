@@ -29,3 +29,15 @@ steps:
     environment: 'ThomasStockerEnvironment'
     folderName: 'ThomasStocker'
     testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
+    timeout: 200 # Optional, default = 3600s
+
+
+    - task: UiPathDeploy@2
+      inputs:
+        orchestratorConnection: 'Orchestrator'
+        packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+        folderName: 'ThomasStocker'
+        environments: 'ThomasStockerEnvironment'
+
+    
+
