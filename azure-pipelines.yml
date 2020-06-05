@@ -25,7 +25,7 @@ steps:
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'Orchestrator'
-    testProjectPath: '$(Build.ArtifactStagingDirectory)\Output'
+    testProjectPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
     environment: 'ThomasStockerEnvironment'
     folderName: 'ThomasStocker'
     testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
