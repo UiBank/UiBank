@@ -32,8 +32,8 @@ steps:
     timeout: 200 # Optional, default = 3600s
 
 
-    - task: UiPathDeploy@2
-      inputs:
+- task: UiPathDeploy@2
+  inputs:
         orchestratorConnection: 'Orchestrator'
         packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
         folderName: 'ThomasStocker'
