@@ -18,6 +18,14 @@ steps:
     versionType: 'AutoVersion'
     projectJsonPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+
+
+
+- task: UiPathTest@2
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'Orchestrator'
+    testProjectPath: '$(Build.ArtifactStagingDirectory)\Output'
+    environment: 'ThomasStockerEnvironment'
+    folderName: 'ThomasStocker'
+    testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
