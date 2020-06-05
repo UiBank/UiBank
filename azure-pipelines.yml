@@ -32,6 +32,12 @@ steps:
     timeout: 200 # Optional, default = 3600s
 
 
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    searchFolder: '$(Build.ArtifactStagingDirectory)\Output'
+
 - task: UiPathDeploy@2
   inputs:
         orchestratorConnection: 'Orchestrator'
