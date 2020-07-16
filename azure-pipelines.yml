@@ -27,9 +27,9 @@ steps:
 - task: UiPathDeploy-preview@2
   inputs:
     orchestratorConnection: 'UiBank_Orchestrator'
-    packagesPath: $(Build.ArtifactStagingDirectory)\Output'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'ThomasStocker'
-    environments: ThomasStockerEnvironment'
+    environments: 'ThomasStockerEnvironment'
 
     
 
