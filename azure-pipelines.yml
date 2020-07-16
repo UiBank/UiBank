@@ -14,19 +14,13 @@ steps:
 - task: UiPathPack-preview@2
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
+    projectJsonPath: '$(Build.SourcesDirectory)\MyLibrary\project.json'
     orchestratorConnection: 'UiBank_Orchestrator'
+    outputType: 'Library'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
 
-- task: UiPathTest-preview@2
-  inputs:
-    testTarget: 'TestProject'
-    orchestratorConnection: 'UiBank_Orchestrator'
-    testProjectPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
-    environment: 'ThomasStockerEnvironment'
-    folderName: 'ThomasStocker'
-    testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
+
 
 
 
