@@ -1,12 +1,41 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+
+
 
 trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+
+  vmImage: "vs2017-win2016"
 
 steps:
+
+
+
+- task: UiPathPack@2
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+
+
+
+- task: UiPathTest@2
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'Orchestrator'
+    testProjectPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
+    environment: 'ThomasStockerEnvironment'
+    folderName: 'ThomasStocker'
+    testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
+    timeout: 200 # Optional, default = 3600s
+
+
+
+
+- task: UiPathDeploy@2
+  inputs:
+        orchestratorConnection: 'Orchestrator'
+        packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+        folderName: 'ThomasStocker'
+        environments: 'ThomasStockerEnvironment'
