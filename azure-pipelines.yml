@@ -28,7 +28,7 @@ steps:
   inputs:
     orchestratorConnection: 'UiBank_Orchestrator'
     packagesPath: $(Build.ArtifactStagingDirectory)\Output'
-    folderName: ThomasStocker'
+    folderName: 'ThomasStocker'
     environments: ThomasStockerEnvironment'
 
     
