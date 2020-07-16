@@ -11,35 +11,31 @@ pool:
 
 steps:
 
-
-
-- task: UiPathPack@2
+- task: UiPathPack-preview@2
   inputs:
     versionType: 'AutoVersion'
     projectJsonPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
+    orchestratorConnection: 'UiBank_Orchestrator'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
 
-
-- task: UiPathTest@2
+- task: UiPathTest-preview@2
   inputs:
     testTarget: 'TestProject'
     orchestratorConnection: 'UiBank_Orchestrator'
     testProjectPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
     environment: 'ThomasStockerEnvironment'
-    folderName: 'ThomasStocker'
+    folderName: ThomasStocker'
     testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
-    timeout: 200 # Optional, default = 3600s
 
 
 
-
-- task: UiPathDeploy@2
+- task: UiPathDeploy-preview@2
   inputs:
-        orchestratorConnection: 'UiBank_Orchestrator'
-        packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-        folderName: 'ThomasStocker'
-        environments: 'ThomasStockerEnvironment'
+    orchestratorConnection: 'UiBank_Orchestrator'
+    packagesPath: $(Build.ArtifactStagingDirectory)\Output'
+    folderName: ThomasStocker'
+    environments: ThomasStockerEnvironment'
 
     
 
