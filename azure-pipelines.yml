@@ -25,7 +25,7 @@ steps:
     orchestratorConnection: 'UiBank_Orchestrator'
     testProjectPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
     environment: 'ThomasStockerEnvironment'
-    folderName: ThomasStocker'
+    folderName: 'ThomasStocker'
     testReportDestination: '$(Build.ArtifactStagingDirectory)\Output'
 
 
