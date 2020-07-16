@@ -24,7 +24,7 @@ steps:
 - task: UiPathTest@2
   inputs:
     testTarget: 'TestProject'
-    orchestratorConnection: 'Orchestrator'
+    orchestratorConnection: 'UiBank_Orchestrator'
     testProjectPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
     environment: 'ThomasStockerEnvironment'
     folderName: 'ThomasStocker'
@@ -36,7 +36,7 @@ steps:
 
 - task: UiPathDeploy@2
   inputs:
-        orchestratorConnection: 'Orchestrator'
+        orchestratorConnection: 'UiBank_Orchestrator'
         packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
         folderName: 'ThomasStocker'
         environments: 'ThomasStockerEnvironment'
