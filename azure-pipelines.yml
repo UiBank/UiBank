@@ -11,6 +11,8 @@ pool:
 
 steps:
 
+- task: UiPathInstallPlatform-preview@2
+
 - task: UiPathPack-preview@2
   inputs:
     versionType: 'AutoVersion'
@@ -18,10 +20,6 @@ steps:
     orchestratorConnection: 'UiBank_Orchestrator'
     outputType: 'Library'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-
-
-
-
 
 
 - task: UiPathDeploy-preview@2
