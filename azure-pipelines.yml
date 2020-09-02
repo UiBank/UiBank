@@ -20,6 +20,6 @@ steps:
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'Orchestrator'
-    testSet: 'Compasso Webinar'
+    testSet: 'foo'
     folderName: 'ThomasStocker'
-    testReportDestination: 'output'
+    testReportDestination: 'output.xml'
