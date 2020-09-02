@@ -17,14 +17,14 @@ steps:
   inputs:
     versionType: 'AutoVersion'
     projectJsonPath: '$(Build.SourcesDirectory)\MyLibrary\project.json'
-    orchestratorConnection: 'UiBank_Orchestrator'
+    orchestratorConnection: 'Orchestrator'
     outputType: 'Library'
     outputPath: 
 
 
 - task: UiPathDeploy@2
   inputs:
-    orchestratorConnection: 'UiBank_Orchestrator'
+    orchestratorConnection: 'Orchestrator'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'ThomasStocker'
     environments: 'ThomasStockerEnvironment'
