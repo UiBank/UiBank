@@ -27,7 +27,7 @@ steps:
     orchestratorConnection: 'Orchestrator'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'Default'
-    environments: 'foo'
+    environments: 
 
     
 
