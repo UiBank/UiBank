@@ -11,9 +11,9 @@ pool:
 
 steps:
 
-- task: UiPathInstallPlatform-preview@2
+- task: UiPathInstallPlatform
 
-- task: UiPathPack-preview@2
+- task: UiPathPack
   inputs:
     versionType: 'AutoVersion'
     projectJsonPath: '$(Build.SourcesDirectory)\MyLibrary\project.json'
@@ -22,7 +22,7 @@ steps:
     outputPath: 
 
 
-- task: UiPathDeploy-preview@2
+- task: UiPathDeploy
   inputs:
     orchestratorConnection: 'UiBank_Orchestrator'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
