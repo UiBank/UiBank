@@ -24,8 +24,8 @@ steps:
 
 - task: UiPathDeploy@2
   inputs:
-    orchestratorConnection: 'Orchestrator'
-    packagesPath: 'abc'
+    orchestratorConnection: 'bla'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'ThomasStocker'
     environments: 'ThomasStockerEnvironment'
 
