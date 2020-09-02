@@ -19,7 +19,7 @@ steps:
     projectJsonPath: '$(Build.SourcesDirectory)\MyLibrary\project.json'
     orchestratorConnection: 'UiBank_Orchestrator'
     outputType: 'Library'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+    outputPath: 
 
 
 - task: UiPathDeploy-preview@2
@@ -31,3 +31,10 @@ steps:
 
     
 
+- task: UiPathTest@2
+  inputs:
+    testTarget: 'TestProject'
+    orchestratorConnection: 'Orchestrator'
+    testProjectPath: '$(Build.ArtifactStagingDirectory)\Output'
+    environment: 'ThomasStockerEnvironment'
+    folderName: 'Default'
