@@ -19,7 +19,7 @@ steps:
     projectJsonPath: '$(Build.SourcesDirectory)\MyLibrary\project.json'
     orchestratorConnection: 'Orchestrator'
     outputType: 'Library'
-    outputPath: 
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
 
 - task: UiPathDeploy@2
