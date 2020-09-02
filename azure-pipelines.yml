@@ -18,8 +18,8 @@ steps:
 
 - task: UiPathTest@2
   inputs:
-    testTarget: 'TestProject'
+    testTarget: 'TestSet'
     orchestratorConnection: 'Orchestrator'
-    testProjectPath: '$(Build.ArtifactStagingDirectory)\Output'
-    environment: 'ThomasStockerEnvironment'
+    testSet: 'Compasso Webinar'
     folderName: 'ThomasStocker'
+    testReportDestination: 'output'
