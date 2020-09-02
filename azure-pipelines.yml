@@ -13,21 +13,6 @@ steps:
 - task: UiPathInstallPlatform-preview@2
 
 
-- task: UiPathPack@2
-  inputs:
-    versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
-    orchestratorConnection: 'Orchestrator'
-    outputType: 'Process'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-
-
-- task: UiPathDeploy@2
-  inputs:
-    orchestratorConnection: 'Orchestrator'
-    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-    folderName: 'Default'
-    environments: 
 
     
 
