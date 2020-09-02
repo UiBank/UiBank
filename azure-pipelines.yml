@@ -10,10 +10,10 @@ pool:
   vmImage: "vs2017-win2016"
 
 steps:
+- task: UiPathInstallPlatform-preview@2
 
-- task: UiPathInstallPlatform
 
-- task: UiPathPack
+- task: UiPathPack@2
   inputs:
     versionType: 'AutoVersion'
     projectJsonPath: '$(Build.SourcesDirectory)\MyLibrary\project.json'
@@ -22,7 +22,7 @@ steps:
     outputPath: 
 
 
-- task: UiPathDeploy
+- task: UiPathDeploy@2
   inputs:
     orchestratorConnection: 'UiBank_Orchestrator'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
