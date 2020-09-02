@@ -26,8 +26,8 @@ steps:
   inputs:
     orchestratorConnection: 'Orchestrator'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-    folderName: 'foo'
-    environments: 'ThomasStockerEnvironment'
+    folderName: 'Default'
+    environments: 'foo'
 
     
 
