@@ -16,9 +16,9 @@ steps:
 - task: UiPathPack@2
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)\MyLibrary\project.json'
+    projectJsonPath: '$(Build.SourcesDirectory)\RPATesting_Community_Webinar\project.json'
     orchestratorConnection: 'Orchestrator'
-    outputType: 'Library'
+    outputType: 'Process'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
 
