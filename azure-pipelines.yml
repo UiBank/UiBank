@@ -12,14 +12,12 @@ pool:
 steps:
 - task: UiPathInstallPlatform-preview@2
 
-
-
     
 
 - task: UiPathTest@2
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'Orchestrator'
-    testSet: 'Compasso Webinar'
+    testSet: UiBank'
     folderName: 'ThomasStocker'
     testReportDestination: 'output.xml'
